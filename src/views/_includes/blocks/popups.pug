@@ -1,0 +1,251 @@
+.popup
+  .popup__bg
+  .popup__close
+    +svgsprite('close')
+  .container
+    .popup__panel
+      .popup__left
+        .popup__title Мастер-класс по Кёрлингу
+        .popup__info
+          .popup__date.popup__info-item
+            +svgsprite('calendar')
+            | 10 декабря
+          .popup__timee.popup__info-item.--hidden
+            +svgsprite('time')
+            | 10 декабря
+        .popup__text 
+          p 
+            b Для прохода на площадку вам понадобятся:
+          ul 
+            li документ, удостоверяющий личность (паспорт); 
+            li QR-код из электронного билета, который приходит на почту после регистрации; 
+            li QR-код, который подтверждает, что вы полностью привились от COVID-19, переболели им или сдали ПЦР-тест с отрицательным результатом. Детям до 18 лет наличие QR-кода необязательно.
+        .popup__covid-free 
+          img(src="./assets/img/covid-free.png", alt="")
+      .popup__right
+        form.popup__right-item.active
+          .popup__from-top
+            .popup__tab-items 
+              .popup__tab-item.active
+                .popup__tab-number 1
+                .popup__tab-title Время
+              .popup__tab-item
+                .popup__tab-number 2
+                .popup__tab-title Данные
+              .popup__tab-item
+                .popup__tab-number 
+                  +svgsprite('check-popup')
+                .popup__tab-title Успех
+            .popup__right-title 
+              | Выберите время
+              .tootltip 
+                .tooltip__ico 
+                  +svgsprite('info')
+            .time 
+              .time__left 12:15 – 13:00
+              .time__right 
+                .time__place 57 мест участника
+                .time__place.--disabled Нет места зрителя
+            .time 
+              .time__left 12:15 – 13:00
+              .time__right 
+                .time__place 57 мест участника
+                .time__place.--disabled Нет места зрителя
+            .time 
+              .time__left 12:15 – 13:00
+              .time__right 
+                .time__place 57 мест участника
+                .time__place.--disabled Нет места зрителя
+            .time 
+              .time__left 12:15 – 13:00
+              .time__right 
+                .time__place 57 мест участника
+                .time__place.--disabled Нет места зрителя
+            .time.--disabled
+              .time__left 12:15 – 13:00
+              .time__places Нет мест 
+          .popup__from-bottom
+            button.next.--disabled Далее
+        form.popup__right-item
+          .popup__from-top
+            .popup__tab-items 
+              .popup__tab-item
+                .popup__tab-number 1
+                .popup__tab-title Время
+              .popup__tab-item.active
+                .popup__tab-number 2
+                .popup__tab-title Данные
+              .popup__tab-item
+                .popup__tab-number 
+                  +svgsprite('check-popup')
+                .popup__tab-title Успех
+            .popup__right-title 
+              | Введите данные и формат
+              .tootltip 
+                .tooltip__ico 
+                  +svgsprite('info')
+            .popup__right-description Места на 15:30 — 16:15: 13 участников <span> • </span> 184 зрителя
+            .input
+              input(type="text") 
+              .input__placeholder E-mail
+            .input
+              input(type="text")
+              .input__placeholder Телефон
+            .places
+              .place__title ФИО и формат участия
+              .place
+                .place__item 
+                  .input
+                    input(type="text") 
+                    .input__placeholder ФИО
+                  +select()
+            .add-child 
+              +svgsprite('add')
+              | Добавить детей
+          .popup__from-bottom
+            button.next.--disabled Записаться
+            .next__description Нажимая на кнопку «Записаться», вы соглашаетесь с политикой конфиденциальности
+        form.popup__right-item
+          .popup__from-top
+            .popup__tab-items 
+              .popup__tab-item
+                .popup__tab-number 1
+                .popup__tab-title Время
+              .popup__tab-item
+                .popup__tab-number 2
+                .popup__tab-title Данные
+              .popup__tab-item.active
+                .popup__tab-number 
+                  +svgsprite('check-popup')
+                .popup__tab-title Успех
+            .popup__right-title 
+              | Вы успешно зарегистрированы
+            .popup__qr 
+              p Мы продублировали вам на почту письмо с QR-кодом.
+              .qr-info
+                .qr-info__item 
+                  p E-mail:
+                  span evgenya74@mail.ru
+                .qr-info__item 
+                  p Телефон:
+                  span +7 (915) 294-38-42
+                .qr-info__item 
+                  p Время:
+                  span 15:30 — 16:15
+              .qr-info
+                .qr-info-flex
+                  .qr-info__qr
+                    img(src="./assets/img/qr.png", alt="")
+                  .qr-info__right 
+                    .qr-info__block 
+                      p ФИО
+                      span Фролов Евгений Васильевич
+                    .qr-info__block 
+                      p Формат
+                      span Участник
+              .qr-info
+                .qr-info-flex
+                  .qr-info__qr
+                    img(src="./assets/img/qr.png", alt="")
+                  .qr-info__right 
+                    .qr-info__block 
+                      p ФИО
+                      span Фролов Евгений Васильевич
+                    .qr-info__block 
+                      p Формат
+                      span Участник
+              .qr-info
+                .qr-info-flex
+                  .qr-info__qr
+                    img(src="./assets/img/qr.png", alt="")
+                  .qr-info__right 
+                    .qr-info__block 
+                      p ФИО
+                      span Фролов Евгений Васильевич
+                    .qr-info__block 
+                      p Формат
+                      span Участник
+        form.popup__right-item
+          .popup__from-top
+            .popup__tab-items 
+              .popup__tab-item
+                .popup__tab-number 1
+                .popup__tab-title Время
+              .popup__tab-item
+                .popup__tab-number 2
+                .popup__tab-title Данные
+              .popup__tab-item.active
+                .popup__tab-number 
+                  +svgsprite('error')
+                .popup__tab-title Ошибка
+            .error-email 
+              img(src="./assets/img/error-email.svg", alt="")
+            .popup__right-title 
+              | Такой E-mail уже есть
+            .error__description Вы уже зарегистрированы и мы отправили вам письмо. Возможно, оно попало в спам или в другие папки в вашем почтовом клиенте. Попробуйте посмотреть там. Если вы его нигде не нашли, то прочтите FAQ или отправьте повторное письмо.
+          .popup__from-bottom
+            button.next Смотреть свой QR-код
+            a.btn.--grey(href="#")  Читать FAQ
+.qr-popup
+  .popup__bg
+  .qr-popup__panel.active
+    .qr-popup__close
+      +svgsprite('close')
+    .qr-popup__head 
+    form.qr-popup__form
+      .qr-popup__title Введите адрес почты и телефон, который вы указали при регистрации
+      .input 
+        input.requared(type="text")
+        .input__placeholder E-mail
+      .input 
+        input.requared(type="text")
+        .input__placeholder Телефон
+      .popup__from-bottom
+        button.next.--disabled Проверить
+        .next__description Нажимая на кнопку «Записаться», вы соглашаетесь с политикой конфиденциальности
+  .qr-popup__panel
+    .qr-popup__close
+      +svgsprite('close')
+    .qr-popup__head 
+    form.qr-popup__form
+      .qr-popup__title Мастер-класс по Кёрлингу
+      .qr-info
+        .popup__info
+          .popup__date.popup__info-item
+            +svgsprite('calendar')
+            | 10 декабря
+          .popup__timee.popup__info-item
+            +svgsprite('time')
+            | 20:00 — 21:00
+        .qr-info-flex
+          .qr-info__qr
+            img(src="./assets/img/qr.png", alt="")
+          .qr-info__right 
+            .qr-info__block 
+              p ФИО
+              span Фролов Евгений Васильевич
+            .qr-info__block 
+              p Формат
+              span Участник
+  .qr-popup__panel
+    .qr-popup__close
+      +svgsprite('close')
+    .qr-popup__head 
+    form.qr-popup__form
+      .qr-popup__title Хмм... Такой адрес не зарегистрирован
+      .qr-popup__description
+        p Возможно вы допустили ошибку, когда вводили ваш адрес электронной почты или использовали другую почту. 
+        p Укажите почтовый адрес и ФИО, <br>по которым с вами можно связаться.
+      .popup__from-bottom
+        button.next Отправить
+        .next__description Нажимая на кнопку «Записаться», вы соглашаетесь с политикой конфиденциальности
+  .qr-popup__panel
+    .qr-popup__close
+      +svgsprite('close')
+    .qr-popup__head 
+    form.qr-popup__form
+      .qr-popup__title Мы получили вашу заявку
+      .qr-popup__description
+        p Наш специалист в ближайшее время напишет вам.
+      .popup__from-bottom
+        button.next Хорошо

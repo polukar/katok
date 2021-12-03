@@ -1,0 +1,30 @@
+.footer{
+  background: url(../img/black-bg.png) repeat-y center / cover ;
+  padding-top: 44px;
+  padding-bottom: 32px;
+  border-radius: 36px 36px 0 0;
+  overflow: hidden;
+}
+.footer__top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.footer__contacts {
+  a{
+    display: block;
+    color: #fff;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  a,p {
+    color: #fff;
+  }
+}
+

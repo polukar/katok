@@ -1,0 +1,34 @@
+.header 
+  .container.--flex.--jcsb.--aicn
+    .logo 
+      img(src="./assets/img/logo.svg", alt="")
+    nav.nav
+      a.nav__link(href="#masters") Что вас ждет 
+      a.nav__link(href="#faq") FAQ
+      a.nav__link(href="#how") Как пройти на каток
+      a.nav__link(href="#qr") Проверить свой QR-код
+    .burger 
+      +svgsprite('burger-white')
+.fiex-header 
+  .container.--flex.--jcsb.--aicn
+    .logo 
+      img(src="./assets/img/fixed-logo.svg", alt="")
+    nav.nav
+      a.nav__link(href="#masters") Что вас ждет 
+      a.nav__link(href="#faq") FAQ
+      a.nav__link(href="#how") Как пройти на каток
+      a.nav__link(href="#qr") Проверить свой QR-код
+    .burger 
+      +svgsprite('burger-black')
+.mobile-nav
+  .container.--flex.--jcsb.--aicn
+    .logo 
+      img(src="./assets/img/fixed-logo.svg", alt="")
+    .mobile-nav-close 
+      +svgsprite('mobile-close')
+  .container 
+    .nav
+      a.nav__link(href="#masters") Что вас ждет 
+      a.nav__link(href="#faq") FAQ
+      a.nav__link(href="#how") Как пройти на каток
+      a.nav__link(href="#qr") Проверить свой QR-код

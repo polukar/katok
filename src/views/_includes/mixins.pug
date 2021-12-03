@@ -1,0 +1,12 @@
+mixin svgsprite(name)
+  svg(class="svgsprite _" + name)&attributes(attributes)
+    use(xlink:href="assets/img/sprites/svgsprites.svg#" + name)
+
+mixin select(name)
+  .select 
+    .select__main.input
+      input(type="text" placeholder=name value="Зритель" disabled)
+    .select__drop 
+      .select__item.active Зритель
+      .select__item Участник
+

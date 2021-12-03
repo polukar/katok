@@ -1,0 +1,265 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = ''
+  - var bodyClass = ''
+block content
+  section.main
+    .container 
+      .main__title День <br>«Московского спорта» <br>на ГУМ-катке
+      .main__covid-free 
+        img(src="./assets/img/covid-free.png", alt="")
+      .main__slider 
+        .swiper-wrapper 
+          .swiper-slide
+            .slide__top 
+              .slide__pic
+                img(src="./assets/img/slide.jpg", alt="")
+                .slide__time 13:30 – 14:30
+              .slide__title Мастер-класс по хоккею
+            a.slide__sumbit(href="#masters")  Записаться
+          .swiper-slide
+            .slide__top 
+              .slide__pic
+                img(src="./assets/img/slide.jpg", alt="")
+                .slide__time 13:30 – 14:30
+              .slide__title Мастер-класс по хоккею
+            a.slide__sumbit(href="#masters")  Записаться
+          .swiper-slide
+            .slide__top 
+              .slide__pic
+                img(src="./assets/img/slide.jpg", alt="")
+                .slide__time 13:30 – 14:30
+              .slide__title Мастер-класс по хоккею
+            a.slide__sumbit(href="#masters")  Записаться
+      .main__content 
+        .after 
+        .before
+        .main__content-left
+          .main__content-item
+            .main__content-title 10 декабря
+            .main__content-description 2021
+          .main__content-item
+            .main__content-title Красная площадь
+            .main__content-description Москва
+          .main__content-item
+            .main__content-title Бесплатно
+            .main__content-description По регистраации
+        .main__content-right 
+          a.btn.--red(href="#masters")  Записаться
+        .main__content-pic 
+          img(src="./assets/img/main-content-1.png", alt="")
+  section.tags 
+    .container
+      h3 Что вас ждет
+  .tags__list 
+    .container.--flex.--jcsb
+      a.tags__item(href="#masters")  Хоккей
+      a.tags__item(href="#fig")  Фигурное катание
+      a.tags__item(href="#kerling")  Керлинг
+      a.tags__item(href="#show")  Иммерсивное шоу «Пой, Танцуй»
+      a.tags__item(href="#free")  Свободное катание
+      a.tags__item(href="#cup")  Кубок СМИ по керлингу
+  section.master.master-top#masters
+    .container
+      .page__title 
+        h2 Хоккей
+        h4 
+          span Мастер-класс
+          span Мастер-класс
+      .master__list
+        .master__pic.--right
+          img(src="./assets/img/master-pic-1.png", alt="")
+          img(src="./assets/img/master-pic-1-2.png", alt="")
+        .master__info
+          h5 Ведущий
+          .leader__list
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar.png", alt="")
+              .leader__info
+                .leader__name Алексей Яшин
+                .leader__work Мастера спорта <br>по хоккею
+          .master__text
+            p Чемпион мира по хоккею Алексей Яшин проведет показательные мастер-классы для всех желающих. Во время занятий спортсмен научит правильно кататься и работать с клюшкой и шайбой, поможет отработать технику броска.
+            p После мастер-классов пройдут мини-соревнования, победители которых получат подарки.
+          .master__btn 
+            button.btn.--red.--open-popup(data-id="123" data-title="Мастер-класс по хоккею ") Записаться
+  section.master#fig
+    .container
+      .page__title 
+        h2 Фигурное <br>катание
+        h4 
+          span Мастер-класс
+          span Мастер-класс
+      .master__list
+        .master__info
+          h5 Ведущий
+          .leader__list
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-2.png", alt="")
+              .leader__info
+                .leader__name Алексей Яшин
+                .leader__work Мастера спорта <br>по хоккею
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-3.png", alt="")
+              .leader__info
+                .leader__name Алексей Яшин
+                .leader__work Мастера спорта <br>по хоккею
+          .master__text
+            p Каждый желающий сможет научиться выполнять базовые элементы фигурного катания под руководством известных спортсменов и почувствовать себя звездой на льду.
+          .master__btn 
+            button.btn.--red.--open-popup(data-id="123" data-title="Мастер-класс по Фигурному катание") Записаться
+        .master__pic.--left 
+          img(src="./assets/img/master-pic-2.png", alt="")
+          img(src="./assets/img/master-pic-2-3.png", alt="")
+  section.master#kerling
+    .container
+      .page__title 
+        h2 Керлинг
+        h4 
+          span Мастер-класс
+          span Мастер-класс
+      .master__list
+        .master__pic.--right 
+          img(src="./assets/img/master-pic-3.png", alt="")
+          img(src="./assets/img/master-pic-3-3.png", alt="")
+        .master__info
+          h5 Ведущий
+          .leader__list
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-4.png", alt="")
+              .leader__info
+                .leader__name Тимур Гаджиханов
+                .leader__work Мастера спорта <br>по хоккею
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-5.png", alt="")
+              .leader__info
+                .leader__name Алексей Яшин
+                .leader__work Мастера спорта <br>по хоккею
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-6.png", alt="")
+              .leader__info
+                .leader__name Анастасия Москалёва
+                .leader__work Мастера спорта <br>по хоккею
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-7.png", alt="")
+              .leader__info
+                .leader__name Алексей Стукальский
+                .leader__work Мастера спорта <br>по хоккею
+            .leader
+              .leader__avatar
+                img(src="./assets/img/avatar-8.png", alt="")
+              .leader__info
+                .leader__name Алексей Стукальский
+                .leader__work Мастера спорта <br>по хоккею
+          .master__text
+            p Заслуженные мастера спорта при поддержке Федерации керлинга России помогут начинающим игрокам разобраться в азах керлинга, изучить игру, научиться точным и эффективным броскам и командной работе.
+          .master__btn 
+            button.btn.--red.--open-popup(data-id="123" data-title="Мастер-класс по Керлингу") Записаться
+  .yellow-master  
+    section.master#show
+      .container
+        .master__list
+          .master__info
+            .page__title 
+              h2 ПОЙ, ТАНЦУЙ
+              h4 
+                span Иммерсивное <br>шоу на льду
+                span Иммерсивное <br>шоу на льду
+            .master__info-right
+              .master__text
+                p Участники иммерсивного шоу на ГУМ-катке получают наушники и под руководством гида попадают на самую тихую дискотеку в мире. 
+                p Уметь петь и танцевать необязательно. Серия простых движений под любимые композиции превращают катание на льду в приключение.
+              .master__btn 
+                button.btn.--red.--open-popup(data-id="123" data-title=" Иммерсивное шоу на льду ПОЙ, ТАНЦУЙ") Записаться
+          .master__pic.--left 
+            img(src="./assets/img/master-pic-4.png", alt="")
+            img(src="./assets/img/master-pic-4-4.png", alt="")
+    section.master#free 
+      .container
+        .master__list
+          .master__pic.--right 
+            img(src="./assets/img/master-pic-5.png", alt="")
+            img(src="./assets/img/master-pic-5-5.png", alt="")
+          .master__info
+            .page__title 
+              h2 Свободное <br>катание
+              h4 
+                span С&nbsp;музыкальным <br>сопровождением
+                span С&nbsp;музыкальным <br>сопровождением
+            .master__info-right
+              .master__text
+                p Лед встречает фигуристов-любителей, юных хоккеистов и всех желающих прокатиться на коньках. Разноцветная иллюминация, приятные мелодии, палатки с чаем и закусками – все условия для отличного зимнего отдыха.
+              .master__btn 
+                button.btn.--red.--open-popup(data-id="123" data-title="Свободное катание с музыкальным сопровождением") Записаться
+  .blue-master
+    section.master#cup
+      .container
+        .master__list
+          .master__info
+            .page__title 
+              h2 Кубок СМИ
+              h4 
+                span По&nbsp;Кёрлингу
+                span По&nbsp;Кёрлингу
+            .master__info-right
+              .master__text
+                p Участники иммерсивного шоу на ГУМ-катке получают наушники и под руководством гида попадают на самую тихую дискотеку в мире. 
+                p Уметь петь и танцевать необязательно. Серия простых движений под любимые композиции превращают катание на льду в приключение.
+              .master__btn 
+                button.btn.--white.--open-popup(data-id="123" data-title="Кубок СМИ по кёрлингу") Записаться
+          .master__pic.--left
+            img(src="./assets/img/master-pic-6.png", alt="")
+            img(src="./assets/img/master-pic-6-6.png", alt="")
+  section.how#how
+    .container 
+      h2.--small Как пройти на каток
+      .plan
+        img(src="./assets/img/plan.jpg", alt="")
+  section.faq#faq
+    .container
+      h2.--small Остались вопросы? 
+      .accardeon 
+        .accardeon__item  
+          .accardeon__main Могут ли посетить событие дети?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+        .accardeon__item  
+          .accardeon__main Что делать, если вам не пришло письмо-подтверждение на почту?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+        .accardeon__item  
+          .accardeon__main Как найти вход на площадку?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+        .accardeon__item  
+          .accardeon__main Какие документы понадобятся для прохода?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+        .accardeon__item  
+          .accardeon__main Сколько стоит участие в мастер-классах?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+        .accardeon__item  
+          .accardeon__main Какой инвентарь вам понадобится?
+          .accardeon__drop
+            p В турнире принимают участие представители федеральных и московских СМИ: радио, ТВ, информационные агентства, спортивные печатные и интернет-издания.
+            p Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины). Турнир является ежегодным для Федерации керлинга России. В нем принимают участие от 3 до 6 смешанных команд (мужчины и женщины).
+  section.main-qr#qr
+    .container
+      .main-qr__panel
+        h2.--small.main-qr__title Не получили письмо <br>с подтверждением?
+        button.btn.--white.--open-qrpopup Восстановите QR здесь
+

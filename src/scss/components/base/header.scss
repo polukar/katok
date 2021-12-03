@@ -1,0 +1,50 @@
+.header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav__link{
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-left: 40px;
+  font-weight: 500;
+  &:first-child{
+    margin-left: 0px;
+  }
+}
+
+.fiex-header{
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  z-index: 2000;
+  transform: translateY(-100%);
+  transition: .4s;
+  &.active{
+    transform: translateY(0);
+  }
+}
+
+.fiex-header .nav__link{
+  color: #1F1C1C;
+}
+.mobile-nav .nav__link{
+  color: #1F1C1C;
+}
+
+.burger{
+  display: none;
+}
+

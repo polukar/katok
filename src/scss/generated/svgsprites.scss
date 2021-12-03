@@ -1,0 +1,46 @@
+.svgsprite {
+    display:inline-block;
+    fill:currentColor;
+    vertical-align:middle;
+
+    &._add {
+    	width:24px;
+    	height:24px;
+    }
+    &._burger-black {
+    	width:24px;
+    	height:24px;
+    }
+    &._burger-white {
+    	width:24px;
+    	height:24px;
+    }
+    &._calendar {
+    	width:30px;
+    	height:30px;
+    }
+    &._check-popup {
+    	width:14px;
+    	height:14px;
+    }
+    &._close {
+    	width:24px;
+    	height:24px;
+    }
+    &._error {
+    	width:14px;
+    	height:14px;
+    }
+    &._info {
+    	width:32px;
+    	height:32px;
+    }
+    &._mobile-close {
+    	width:24px;
+    	height:24px;
+    }
+    &._time {
+    	width:26px;
+    	height:26px;
+    }
+}
